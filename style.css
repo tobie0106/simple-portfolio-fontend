@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.hero {
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 0.75rem;
+}
+.hero span {
+  color: #fce7f3;
+  font-weight: 700;
+}
+.hero p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+.btn {
+  background: #fff;
+  color: #4f46e5;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+.card h2 {
+  margin-top: 0;
+}
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.todo-form input {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+.todo-form button {
+  padding: 0.65rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #fff;
+  cursor: pointer;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+.todo-actions button {
+  margin-left: 0.4rem;
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+}
+.todo-actions .complete-btn {
+  background: #10b981;
+  color: #fff;
+}
+.todo-actions .delete-btn {
+  background: #ef4444;
+  color: #fff;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+.skill {
+  background: #eef2ff;
+  color: #1e3a8a;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+}
+.footer {
+  text-align: center;
+  color: #6b7280;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
